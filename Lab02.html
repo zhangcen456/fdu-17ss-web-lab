@@ -1,57 +1,63 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Title</title>
- </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="box">
+<header>
+    <hgroup>
+    <h1>Share Your Travels</h1>
+    <h2>Let us know where you've been</h2>
+    </hgroup>
+    <nav>
+    <ul>
+        <li><a href="#i1">Description</a></li>
+        <li><a href="#i2">Related Photos</a></li>
+        <li><a href="#i3">Reviews</a></li>
+    </ul>
+    </nav>
+</header>
 
- <body>
-   <h1><img src="images/logo.png" width=96 height=96>Share Your Travels</h1>
 
-   <nav>
-     <ul>
-       <li><a href="#">Description</a></li>
-       <li><a href="#">Related Photos</a></li>
-       <li><a href="#">Reviews</a></li>
-     </ul>
-   </nav>
-
-   <h2>New York-Central Park</h2>
-
-   <section>
-    <article>
-     <h3>Description</h3>
-     <p>Photo by Randy Connolly</p>
-     <p>This photo of Consevatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on October 22,2016 with a Canon EOS 30D camera</p>
-    </article>
-    <figure>
-       <img src="images/central-park.jpg" width=500 height=312>
-       <figcaption><i>Conservatory Pond in Central Park</i></figcaption>
-    </figure>
-    <footer>Options:<img src="images/icon_download.png" width=18 height=18> <img src="images/icon_mail.png" width=18 height=18> <img src="images/icon_map.png" width=18 height=18> <img src="images/icon_up.png" width=18 height=18> <img src="images/icon_down.png" width=18 height=18></footer>
-   </section>
-
-   <section>
-    <h3>Related Photos</h3>
-    <img src="images/related-square1.jpg" width=150 height=150>
-    <img src="images/related-square2.jpg" width=150 height=150>
-    <img src="images/related-square3.jpg" width=150 height=150>
-   </section>
-
-   <section>
-    <h3>Reviews</h3>
-    <b><img src="images/icon_comment.png" width=18 height=18> Ricardo on 2016-05-23</b>
-    <p>Easy on the HDR buddy.</p>
+<section class="outer">
+    <section class="inner" id="i1">
+        <h2>NEW YORK - CENTRAL PARK</h2>
+        <figure>
+            <img src="images/large-central-park.jpg" id="park" title="central park">
+            <figcaption>Conservatory Pond in Central Park</figcaption>
+        </figure>
+        <p>This photo of Consevatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on October 22,2016 with a Canon EOS 30D camera</p>
+        <footer><img src="images/icon_download.png"> <img src="images/icon_mail.png"> <img src="images/icon_map.png"> <img src="images/icon_up.png"> <img src="images/icon_down.png"></footer>
+    </section>
+    <section class="inner" id="i2">
+        <h2>RELATED PHOTOS</h2>
+        <img src="images/related-square1.jpg">
+        <img src="images/related-square2.jpg">
+        <img src="images/related-square3.jpg">
+    </section>
+    <section class="inner" id="i3">
+    <h2>REVIEWS</h2>
+        <div>
+            <span>By Ricardo on <time>2016-05-23</time></span>
+            <p>Easy on the HDR buddy.</p>
+        </div>
     <hr />
-    <b><img src="images/icon_comment.png" width=18 height=18> Susan on 2016-11-18</b>
-    <p>I love Central Park.</p>
+        <div>
+            <span>By Susan on <time>2016-11-18</time></span>
+            <p>I love Central Park.</p>
+        </div>
     <hr />
-   </section>
+    </section>
+</section>
 
-   <footer>
-    <a href="#">Home</a>|<a href="#">Browse</a>|<a href="#">Search</a>
-    <p><i>Copyright &copy 2017 Share Your Travels</i></p>
-   </footer>
- </body>
+<footer id="f1">
+    <div><a href="#">Home</a>  |  <a href="#">Browse</a>  |  <a href="#">Search</a></div>
+    <p>Copyright &copy 2017 Share Your Travels</p>
+</footer>
+</div>
+</body>
 </html>
         
