@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head >
-   <meta charset="utf-8">
+   <meta charset="gb2312">
    <title>Lab 04</title>
    <link rel="stylesheet" href="./css/reset.css" />
    <link rel="stylesheet" href="./css/Lab04.css" />
@@ -13,7 +13,102 @@
 </header>
 <main>
    <section>
-   
+   <form method="post" action="http://www.randyconnolly.com/tests/process.php">
+            <fieldset>
+                <legend>PHOTO DETAILS</legend>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <label>
+                                <p>Title</p><input type="text" placeholder="Give your photo a descriptive name." name="title">
+                            </label>
+                            <label>
+                                <p>Description</p><textarea placeholder="Adding a rich description will help with search results" rows="5"></textarea>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <p>Continent</p>
+                                <select>
+                                    <option>Choose continent</option>
+                                    <option>Europe</option>
+                                    <option>Asia</option>
+                                </select>
+                            </label>
+                            <label>
+                                <p>Country</p>
+                                <select>
+                                    <option>Choose country</option>
+                                    <option>China</option>
+                                    <option>America</option>
+                                </select>
+                            </label>
+                            <label>
+                                <p>City</p>
+                                <input type="text" name="city">
+                            </label>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <p>Copyright?</p>
+                                <input type="radio" name="right" value="right1">All rights reserved<br>
+                                <input type="radio" name="right" value="right1" checked="checked">Creative Commons<br>
+                            </div>
+                            <div class="box">
+                                <p>Creative Commons Types</p>
+                                <input type="checkbox" name="type" value="type1">Attribution<br>
+                                <input type="checkbox" name="type" value="type2">Noncommercial<br>
+                                <input type="checkbox" name="type" value="type3">No Derivative Works<br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <div class="rectangle">
+                            I accept the software license
+                            <input type="checkbox" name="license" value="license">
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <p>Rate this photo:</p>
+                                <input type="number" name="number">
+                            </label>
+                            <label>
+                                <p>Color Collection</p>
+                                <input type="color" name="color">
+                            </label>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <label>
+                                    <p>Date Taken</p>
+                                    <input type="date" name="date">
+                                </label>
+                                <label>
+                                    <p>Time Taken</p>
+                                    <input type="time" name="time">
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="rectangle">
+                            <button type="submit" class="rounded" name="submit">Ã·Ωª</button>
+                            <button type="reset" class="rounded" name="reset">Clear Form</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
    </section>
 </main>  
 
