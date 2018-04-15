@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<div class="row">
+    <div class="col-lg-4 text-center">
+        <p class="h2">Share Your Travels</p>
+        <p class="text-center"><em>Let us know where you've been</em></p>
+    </div>
+    <div class="col-lg-7">
+    <ul class="nav nav-pills nav-fill p-3">
+        <li class="nav-item"><a href="upload.html" class="nav-link text-muted">Upload</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-muted">Related Photos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-muted">Reviews</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-lg-9 card">
+        <div class="card-body"><p class="h4">New York-Central Park</p>
+            <figure>
+                <figcaption>Conservatory Pond in Central Park</figcaption>
+                <a href="images/large-central-park.jpg"><img src="images/large-central-park.jpg" id="park" title="central park" class="img-fluid" ></a>
+            </figure>
+            <p>This photo of Consevatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on October 22,2016 with a Canon EOS 30D camera</p>
+            <div class="btn-group float-right" role="group">
+                <button type="button" class="btn btn-light"><img src="images/icon_download.png"></button>
+                <button type="button" class="btn btn-light"><img src="images/icon_mail.png"></button>
+                <button type="button" class="btn btn-light"><img src="images/icon_map.png"></button>
+                <button type="button" class="btn btn-light"><img src="images/icon_up.png"></button>
+                <button type="button" class="btn btn-light"><img src="images/icon_down.png"></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+    <div class="card">
+        <div class="card-body">
+            <p class="h4">Related Photos</p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="images/related-large1.jpg"><img class="d-block w-100" src="images/related-square1.jpg" alt="First slide"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="images/related-large2.jpg"><img class="d-block w-100" src="images/related-square2.jpg" alt="Second slide"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="images/related-large3.jpg"><img class="d-block w-100" src="images/related-square3.jpg" alt="Third slide"></a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+        <h3>Reviews</h3>
+        <div class="text-center">
+            <button class="font-italic btn btn-default bg-white" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><span class="d-lg-block">Ricardo</span><span class="badge badge-pill badge-info d-lg-block">2016-05-23</span></button>
+            <p class="collapse" id="collapseExample">Easy on the HDR buddy.</p>
+        </div>
+        <hr />
+        <div class="text-center">
+            <button class="font-italic btn btn-default bg-white" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample"><span class="d-lg-block">Susan</span><span class="badge badge-pill badge-info d-lg-block">2016-11-18</span></button>
+            <p class="collapse" id="collapseExample2">I love Central Park.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="container text-center col-lg-8">
+    <ul class="nav nav-pills nav-justified">
+            <li class="nav-item"><a href="#" class="nav-link text-info">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-info">Browse</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-info">Search</a></li>
+    </ul>
+    <p class="font-italic">Copyright &copy 2017 Share Your Travels</p>
+</div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
