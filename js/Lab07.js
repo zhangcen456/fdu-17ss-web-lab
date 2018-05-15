@@ -29,12 +29,12 @@ function createTable(){
     allInput[0]=document.createElement("input");
     allInput[0].type="text";
     allInput[0].placeholder="Table Name";
-    allInput[0].onblur=createTable2;
+    allInput[0].onchange=createTable2;
     allInput[1]=document.createElement("input");
     allInput[1].type="number";
     allInput[1].placeholder="Columns Numbers";
     allInput[1].step="1";
-    allInput[1].onblur=createTable2;
+    allInput[1].onchange=createTable2;
     commit.onclick=createTable3;
     ds.appendChild(allInput[0]);
     ds.appendChild(allInput[1]);
@@ -47,6 +47,7 @@ function createTable2(){
         for(let i=0;i<col;i++){
             ds.removeChild(input[i]);
         }
+        ds.removeChild(commit);
     }
     input.length=0;
     if(ds.children.length>=4){
