@@ -4,7 +4,11 @@
 
 ## 当前 Lab
 
+<<<<<<< HEAD
 - [Lab09](./requirements/Lab09.md)
+=======
+- [Lab10](./requirements/Lab10.md)
+>>>>>>> upstream/master
 
 ## 往期 Lab
 
@@ -15,5 +19,9 @@
 - [Lab06](./requirements/Lab06.md)
 - [Lab07](./requirements/Lab07.md)
 - [Lab08](./requirements/Lab08.md)
+<<<<<<< HEAD
+=======
+- [Lab09](./requirements/Lab09.md)
+>>>>>>> upstream/master
 
 ---
