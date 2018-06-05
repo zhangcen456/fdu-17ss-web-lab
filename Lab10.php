@@ -4,7 +4,9 @@
 //****** Hint ******
 //connect database and fetch data here
 $mysqli=new mysqli("localhost","root","","travel");
-
+if ( mysqli_connect_errno() ) {
+    die( mysqli_connect_error() );
+}
 ?>
 
 <!DOCTYPE html>
@@ -94,17 +96,17 @@ $mysqli=new mysqli("localhost","root","","travel");
               </a>
             </li>        
             */
-            if($_GET['country']!=='0'&&$_GET['continent']!=='0'){
-                findByBoth();
-            }else if($_GET['continent']==='0'){
+            if(!$_GET||($_GET['country']==='0'&&$_GET['continent']==='0')){
+                showAll();
+            }else if($_GET['continent']!=='0'){
                 if($_GET['country']==='0'){
-                    showAll();
+                    findByContinent();
                 }
                 else{
-                    findByCountry();
+                    findByBoth();
                 }
             }else{
-                findByContinent();
+                findByCountry();
             }
             function findByCountry(){
                 global $mysqli;
